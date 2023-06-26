@@ -16,12 +16,6 @@ db.init_app(app)
 
 api = Api(app)
 
-class Welcome(Resource):
-    def get(): 
-        return f"Hello, sof, welcome!!"
-    
-api.add_resource(Welcome, '/')    
-
 class Birds(Resource):
 
     def get(self):
